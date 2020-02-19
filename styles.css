@@ -18,6 +18,7 @@ li {
 body {
     background: var(--secondary);
     overflow-x: hidden;
+    font-family: 'Rubik Regular';
 }
 .button {
 background: none;
@@ -42,6 +43,29 @@ input, textarea {
 }
 
 /* fonts */
+@font-face {
+    font-family: 'Rubik Regular';
+    src: url(assets/fonts/Rubik-Regular.ttf);
+}
+h1,h2,h3,h4 {
+    color: #dddbff;
+    font-weight: normal;
+}
+p,a,li {
+    color: #9893d8;
+}
+h1,h3 {
+    font-size: 1.2em;
+}
+h2 {
+    font-size: 1.6em;
+}
+h4{
+    font-size: 1.1em;
+}
+.leading {
+    font-size: 1.1em;
+}
 
 /* mobile styles */
 
@@ -53,9 +77,16 @@ input, textarea {
 /* large tablets and laptops */
 @media screen and (min-width: 960px){
 
+    body {
+        font-size: 18px;
+    }
+
 }
 
 /* desktop styles */
 @media screen and (min-width: 1200px){
 
+    body {
+        font-size: 20px;
+    }
 }
